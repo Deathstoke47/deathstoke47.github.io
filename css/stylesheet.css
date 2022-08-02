@@ -1,0 +1,1677 @@
+/* Css for every single element */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+/* Header */
+header {
+  width: 100%;
+  height: auto;
+  padding: 20px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  font-family: "Montserrat", sans-serif;
+}
+.header-logo img {
+  width: auto;
+  height: auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-checkbox {
+  display: none;
+}
+.menu-toggle {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+nav .close {
+  display: none;
+}
+.menu-toggle svg {
+  width: 40px;
+  height: 15px;
+}
+
+.close{
+  color: #fff;
+}
+
+.login-button {
+  display: none;
+}
+
+.menu a {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  display: block;
+}
+
+.menu .current{
+  font-weight: 700;
+  border-bottom: 5px solid #34863F;
+
+}
+.menu-links{
+  background-color: #34863F;
+  width: 100%;
+  height: 100vh;
+  padding-top: 60px;
+  display: none;
+}
+.menu li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.menu-image{
+  display: none;
+}
+
+.menu-image img{
+  position: absolute;
+  overflow: hidden;
+  left: -70px;
+  bottom:-60px
+}
+
+#nav-checkbox:checked body ~ * {
+  background-color: #34863f;
+}
+
+#nav-checkbox:checked ~ .menu-toggle .menu {
+  display: none;
+}
+
+#nav-checkbox:checked ~ .menu-toggle .close {
+  display: block;
+}
+
+#nav-checkbox:checked ~ header {
+  padding:0;
+}
+
+#nav-checkbox:checked ~ .menu-links .menu-image{
+  display: block;
+}
+/* 10-inch ipad  introduction div css */
+@media only screen and (min-width: 700px) {
+
+  header {
+    padding: 20px 60px;
+  }
+
+  .menu-toggle {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    padding-right: 60px;
+  }
+
+}
+
+/* 10-inch ipad pro tiktok div css */
+@media only screen and (min-width: 950px) {
+
+  nav > input,
+  label {
+    display: none;
+  }
+  .menu-links,
+  .login-button {
+    display: block;
+  }
+  .menu-links{
+    padding: 0;
+    background: none;
+    height: auto;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    font-family: "Montserrat", sans-serif;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    height: 29px;
+    padding-right: 20px;
+  }
+  .menu a {
+    font-size: 16px;
+    color: #3d4a3f;
+    font-weight: 500;
+  }
+
+  .menu .current {
+    color: #141627;
+    font-weight: 700;
+  }
+
+  /* Login button */
+  .login {
+    align-self: center;
+  }
+  .login-button {
+    background-color: #34863f;
+    padding: 10px 32px 11px 31px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .login-button:hover {
+    background-color: #46ad54;
+  }
+}
+
+/* Desktop header */
+@media only screen and (min-width: 1300px) {
+  nav > input,
+  label {
+    display: none;
+  }
+
+  .menu a,
+  .login-button {
+    display: block;
+  }
+
+  header {
+    width: 100%;
+    height: 80px;
+    font-family: "Montserrat", sans-serif;
+    padding: 24px 160px 22px 161px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav {
+    width: 70%;
+    display: flex;
+    justify-content: end;
+  }
+  .menu li {
+    display: inline-block;
+    padding-right: 50px;
+    text-transform: uppercase;
+    height: 29px;
+  }
+  .menu a {
+    font-size: 16px;
+    color: #3d4a3f;
+    font-weight: 500;
+  }
+
+  .menu .current {
+    color: #141627;
+    font-weight: 700;
+  }
+
+  /* Login button */
+  .login {
+    align-self: center;
+  }
+  .login-button {
+    background-color: #34863f;
+    padding: 10px 32px 11px 31px;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+/* css for main section beings from here */
+main {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+/* 15-inch desktop main section */
+@media only screen and (min-width: 950px) {
+  .intro-container {
+    background: none !important;
+  }
+  body {
+    background: url(../images/banner_bg.png) 0 0 no-repeat;
+    background-size: 100%;
+  }
+
+  main {
+    font-size: 16px;
+  }
+}
+
+/* intro-content css */
+.intro-container {
+  background: url(../images/banner_bg.png) 0 0 no-repeat;
+  background-size: cover;
+}
+.intro-content {
+  height: 318px;
+  margin: 0 20px;
+  display: flex;
+}
+.intro-heading h1 {
+  padding-top: 44px;
+  font-weight: 700;
+  font-size: 28px;
+  color: #141627;
+}
+
+.intro-heading span {
+  color: #34863f;
+}
+
+.intro-heading p {
+  color: #3d4a3f;
+  line-height: 1.75;
+  width: 246px;
+}
+
+.learn-more-button{
+  width: 157px;
+  background-color: #34863f;
+  height: 40px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-left: 24px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.learn-more-button:hover {
+  background-color: #46ad54;
+}
+
+.learn-more span{
+  color: #fff;
+}
+
+.button-icon{
+  color: #fff !important;
+  padding-left: 10px;
+  padding-right: 16px;
+  font-size: 20px;
+
+}
+
+.intro-image{
+  position: absolute;
+  padding-top: 96px;
+  display: grid;
+  justify-items: flex-end;
+}
+.intro-image img{
+  width: 60%;
+}
+
+.intro-image .food-plate{
+  position: relative;
+  right: -100px;
+}
+
+.intro-image .leaves{
+  width: auto;
+}
+
+/* 10-inch ipad  introduction div css */
+@media only screen and (min-width: 700px) {
+  .intro-content {
+    width: 100%;
+    padding: 0 60px;
+    display: flex;
+    height: auto;
+    margin: 0;
+    padding-bottom: 40px;
+
+  }
+
+  .intro-heading {
+    padding-top: 70px;
+    align-items: center;
+    width: auto;
+  }
+
+  .intro-heading h1 {
+    font-size: 36px !important;
+  }
+  .intro-heading p{
+    width: 300px;
+  }
+
+  .intro-image {
+    display: inline !important;
+    padding-top: 36px;
+    align-self: center;
+    position: static;
+  }
+
+  .intro-image > .food-plate{
+    width: 100%;
+    position: static;
+  }
+
+  .intro-image .leaves{
+    position: absolute;
+    right: 0;
+    top: 50vh;
+  }
+}
+
+/* 12-inch ipad pro introduction div css */
+@media only screen and (min-width: 950px) {
+
+  .intro-content {
+    padding: 0 80px;
+    display: flex;
+    height: auto;
+
+  }
+
+  .intro-heading {
+    padding-top: 70px;
+    align-items: center;
+    width: 60%;
+  }
+
+  .intro-heading h1 {
+    font-size: 40px !important;
+  }
+
+  .intro-heading p{
+    width: auto;
+  }
+
+  .intro-image {
+    display: block !important;
+    padding-top: 36px;
+  }
+
+  .learn-more-button{
+    width: 176px;
+    height:45px;
+  }
+}
+
+/* 15-inch desktop introduction section */
+@media only screen and (min-width: 1300px) {
+  .intro-content {
+    padding: 0 140px;
+    display: flex;
+    height: auto;
+  }
+
+  .intro-heading {
+    padding-top: 107px;
+    align-items: center;
+    width: 60%;
+  }
+
+  .intro-heading h1 {
+    font-size: 50px !important;
+  }
+
+  .intro-image {
+    display: block !important;
+    padding-top: 36px;
+    padding-left: 15px;
+    
+  }
+}
+
+/* Description content */
+.description-content {
+  width: 335px;
+  height: auto;
+  margin: 50px 20px 0 20px;
+  padding-top: 40px;
+}
+.description-content .title {
+  font-size: 28px;
+  color: #141627;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.description-content span {
+  font-weight: 700;
+  font-size: 28px;
+  font-style: bold;
+}
+
+.description-content p {
+  margin-top: 20px;
+  line-height: 1.75;
+  color: #3d4a3f;
+}
+.youtube-link {
+  color: #34863f;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.youtube-videos {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 20px;
+  overflow-y: hidden;
+}
+
+.youtube-videos::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.youtube-videos::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #34863f;
+  border-right: none;
+  border-left: none;
+}
+
+/* 10-inch ipad  Description content div css */
+@media only screen and (min-width: 700px) {
+
+  .description-content {
+    width: 70%;
+    height: auto;
+    margin: 0 60px;
+  }
+
+  .description-content span {
+    font-size: 46px;
+  }
+  .description-content p {
+    width: auto;
+    height: auto;
+    font-size: 16px;
+  }
+
+  .youtube-videos {
+    padding-top: 30px;
+    margin: 0 60px;
+  }
+
+}
+
+/* 12-inch ipad pro Description content css */
+@media only screen and (min-width: 950px) {
+
+  .description-content {
+    width: 60%;
+    height: auto;
+    margin: 0 80px;
+  }
+
+  .description-content .title {
+    width: 612px;
+    height: 98px;
+    font-size: 36px;
+    font-weight: 400px !important;
+  }
+
+  .description-content span {
+    font-size: 46px;
+  }
+  .description-content p {
+    width: 733px;
+    height: 140px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .youtube-videos {
+    padding-top: 30px;
+    margin: 0 80px;
+  }
+
+}
+
+/* 15-inch desktop Description content  */
+@media only screen and (min-width: 1300px) {
+  .description-content {
+    width: 100%;
+    height: 400px;
+    padding: 0 160px;
+    margin: 0;
+  }
+  .description-content .title {
+    width: 612px;
+    height: 98px;
+    font-size: 36px;
+    font-weight: 400px !important;
+  }
+
+  .description-content span {
+    font-size: 46px;
+  }
+  .description-content p {
+    width: 733px;
+    height: 140px;
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .youtube-videos {
+    margin: 0 160px;
+    height: 480px;
+    display: flex;
+  }
+}
+
+/* Video description div css */
+
+.section-1 iframe, .section-2 iframe {
+  width: 300px;
+  height: 170px;
+  border-radius: 20px;
+}
+.section-1 .title {
+  padding-top: 20px;
+  width: 300px;
+}
+
+.section-2 {
+  height: 170px;
+  display: flex;
+}
+
+.section-2 div {
+  padding-left: 20px;
+}
+
+.video-2 .title,
+.video-3 .title {
+  padding-top: 20px;
+  width: 300px;
+}
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #141627;
+}
+.views {
+  color: #7b7f93;
+  padding-top: 13px;
+  padding-bottom: 20px;
+}
+
+.scroll {
+  display: none;
+}
+
+
+
+/* 15-inch desktop Video description div css */
+@media only screen and (min-width: 1300px) {
+  .section-1 iframe {
+    width: 545px;
+    height: 306px;
+    border-radius: 20px;
+  }
+
+  .section-2 {
+    display: flex;
+    height: 306px;
+    padding-left: 300px;
+  }
+
+  .video-2 {
+    padding-right: 40px;
+  }
+  .video-2 iframe,
+  .video-3 iframe {
+    width: 260px;
+    height: 306px;
+    border-radius: 20px;
+  }
+
+  /* Video description div css */
+  .section-1,
+  .section-2 {
+    font-size: 18px;
+  }
+
+  .section-1 .title {
+    width: 353px;
+  }
+
+  .video-2 .title,
+  .video-3 .title {
+    width: 260px;
+    padding-top: 20px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  .views {
+    font-size: 14px;
+  }
+
+  .scroll {
+    display: block;
+    position: absolute;
+    margin-top: 470px;
+    font-size: 12px;
+    color: #afafaf;
+    line-height: 2.333;
+  }
+}
+
+/* Plan Form */
+.form-container {
+  margin-top: 90px;
+  background: url(../images/pine-wood-texture.png) 0 0 no-repeat;
+  background-size: cover;
+  padding-bottom: 40px;
+}
+.form-content {
+  width: auto;
+  height: auto;
+  margin: 0 20px;
+  align-items: center;
+}
+
+.form-description h1 {
+  width: 335px;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.form-1 {
+  width: 335px;
+  height: 480px;
+  font-size: 16px;
+  margin-top: 28px;
+  padding: 0px 20px;
+  border-radius: 20px;
+  box-shadow: #cecdcd;
+  box-sizing: border-box;
+  background-color: transparent;
+  background-color: rgb(255,255,255,0.7);
+}
+
+.form-1 p {
+  color: #838389;
+}
+
+.form-1 label {
+  color: #141627;
+  font-weight: 500;
+}
+
+
+.form-1 input{
+  background-color: transparent;
+}
+.form-container img{
+  position: relative;
+  width: 30%;
+  top:-20px;
+  padding-left: 20px;
+}
+/* 10-inch ipad  plan form div css */
+@media only screen and (min-width: 700px) {
+
+  .form-container{
+    width: 100%;
+    height: auto;
+  }
+  .form-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
+  .form-1 {
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  .form-description h1 {
+    width: 90%;
+    line-height: 1.17;
+    font-size: 28px;
+  }
+
+  .form-container img{
+    width: 20%;
+    top:-30px;
+    padding-left: 50px;
+  }
+
+}
+
+/* 12-inch ipad pro plan form div css */
+@media only screen and (min-width: 950px) {
+
+  .form-container{
+    width: 100%;
+    height: auto;
+  }
+  .form-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px 30px 80px;
+  }
+
+  .form-1 {
+    margin-top: 0;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .form-description{
+    padding-top: 120px;
+  }
+
+  .form-description h1 {
+    width: 90%;
+    line-height: 1.17;
+    font-size: 48px;
+  }
+  .form-container img{
+    position: absolute;
+    top: auto;
+  }
+  .plan-form{
+    padding-top: 80px;
+  }
+}
+
+/* 15-inch desktop plan form div css */
+@media only screen and (min-width: 1300px) {
+  .form-content {
+    width: 100%;
+    height: 690px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 160px;
+  }
+  .form-description{
+    padding: 0;
+    width: 50%;
+  }
+  .form-description h1 {
+    width: 100%;
+    line-height: 1.17;
+    font-size: 54px;
+  }
+
+  .form-container img{
+    top: 1600px;
+    padding-left: 80px;
+  }
+
+  .plan-form {
+    width: 469px;
+    height: 543px;
+    margin-right: 20px;
+    padding: 0;
+
+  }
+  .form-1 {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    margin-top: 75px;
+    padding-left: 38px;
+  }
+
+  .form-1 p {
+    font-size: 20px;
+  }
+}
+/* plan form input field css */
+.input-fields input {
+  width: 156px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: #919090;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.gender,
+.weight,
+.weight-goal,
+.height,
+.email {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+/* css for radio button */
+.male input,
+.female input {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+}
+/* Form option input field css */
+.gender .male,
+.female,
+.weight input,
+.weight-goal input {
+  margin-left: 40px;
+}
+
+.height-input {
+  display: flex;
+  padding-left: 45px;
+}
+
+.height-input input {
+  margin-right: 12px;
+  padding-left: 10px;
+  width: 72px;
+  font-size: 16px;
+}
+.email input {
+  margin-left: 53px;
+}
+.email input {
+  width: 198px;
+}
+
+/* form option p css */
+.weight-goal span,
+.weight span {
+  margin-left: 10px;
+  color: #141627;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.plan-button{
+  background-color: #34863f;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-top: 10px;
+  width: 295px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.plan-button:hover{
+  background-color: #46ad54;
+}
+
+.plan-button a{
+  color: #fff;
+}
+
+/* 15-inch desktop plan form div css */
+@media only screen and (min-width: 950px) {
+  .gender label {
+    display: block;
+    padding-left: 8px;
+  }
+  .male,
+  .female {
+    display: flex;
+  }
+  
+}
+/* 15-inch desktop plan form div css */
+@media only screen and (min-width: 1300px) {
+  .input-fields input {
+    width: 183px;
+    height: 53px;
+  }
+
+  .gender label {
+    font-size: 22px;
+  }
+
+  .weight input {
+    margin-left: 65px;
+  }
+
+  .weight-goal input {
+    margin-left: 17px;
+  }
+
+  .height-input {
+    margin-left: 30px;
+  }
+
+  .height-input input {
+    font-size: 24px;
+    padding-left: 10px;
+    width: 86px;
+  }
+
+  .email input {
+    margin-left: 85px;
+    width: 254px;
+  }
+
+  /* form option p css */
+  .weight-goal span,
+  .weight span {
+    margin-left: 18px;
+    color: #141627;
+    font-size: 22px;
+  }
+
+  .plan-button {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    padding: 17px 0;
+  }
+  .plan-button a {
+    font-size: 18px;
+  }
+}
+
+/* tiktok div css */
+.tiktok {
+  margin: 20px;
+  height: 525px;
+  padding-bottom: 20px;
+}
+
+.tiktok-img{
+  position: relative;
+  right: -220px;
+  top: -60px;
+}
+
+.tiktok-img .food-plate{
+  width: 40%;
+}
+
+.tiktok iframe {
+  width: 300px;
+  height: 170px;
+  border-radius: 20px;
+}
+
+.tiktok-description{
+  position: relative;
+}
+
+.tiktok-description p {
+  font-size: 20px;
+}
+.tiktok-description img {
+  height: 50px;
+}
+.tiktok-link {
+  color: #34863f;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+/* tiktok videos */
+.tiktok-videos {
+  display: flex;
+  margin-top: 20px;
+  overflow: auto;
+  overflow-y: hidden;
+}
+
+.tiktok-videos div{
+  padding-right: 20px;
+}
+
+.tiktok-1 p,
+.tiktok-2 p,
+.tiktok-3 p {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+
+.tiktok-videos::-webkit-scrollbar {
+  width: 5px;
+}
+.tiktok-videos::-webkit-scrollbar-track {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.tiktok-videos::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #34863f;
+  border-right: none;
+  border-left: none;
+}
+
+/* 10-inch ipad  tiktok div css */
+@media only screen and (min-width: 700px) {
+  .tiktok {
+    margin: 0 60px;
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .tiktok-img{
+    position: relative;
+    right: -450px;
+    top: 0;
+  }
+
+  .tiktok-img .food-plate{
+    height: auto;
+    position: absolute;
+    width: 50%;
+    margin-left: 80px;
+    top: -90px;
+  }
+  .tiktok-img .leaves{
+    position: absolute;
+    
+  }
+
+  .tiktok-description{
+    padding-top: 160px;
+  }
+
+}
+
+/* 12-inch ipad pro tiktok div css */
+@media only screen and (min-width: 950px) {
+  .tiktok {
+    margin: 0 80px;
+  }
+
+  .tiktok-img{
+    right: -650px;
+  }
+
+  .tiktok-img .food-plate{
+    width: 40%;
+  }
+}
+
+/* 15-inch desktop tiktok div css */
+@media only screen and (min-width: 1300px) {
+  .tiktok {
+    margin: 0 160px;
+  }
+
+  
+  .tiktok-img{
+    right: -1100px;
+  }
+  .tiktok-img .food-plate{
+    width: 35%;
+  }
+
+  .tiktok-description {
+    padding-top: 246px;
+  }
+  .tiktok-description p {
+    font-size: 36px;
+  }
+  .tiktok-description img {
+    height: 60px;
+  }
+
+  .tiktok-link {
+    font-weight: 700;
+  }
+
+  /* tiktok videos */
+
+  .tiktok iframe {
+    width: 400px;
+    height: 198px;
+  }
+  .tiktok-videos {
+    margin-top: 75px;
+    display: flex;
+    height: 280px;
+  }
+
+  .tiktok-2,
+  .tiktok-3 {
+    display: block;
+    padding-left: 100px;
+  }
+
+  .tiktok-1 p,
+  .tiktok-2 p,
+  .tiktok-3 p {
+    padding-top: 15px;
+  }
+}
+/* contact form div */
+.contact-form-container {
+  margin: 0 20px;
+  height: auto;
+  padding-top: 60px;
+}
+.contact-form {
+  border-radius: 20px;
+  width: 335;
+  margin-bottom: 40px;
+  background-image: linear-gradient( #81dc7c, #4ead56, #34863f);
+  background-size: 100%;
+  background-color: #63c264;
+}
+/* Contact description */
+.contact-form .contact-description {
+  color: #fff;
+  width: 260px;
+  height: 113px;
+  margin-left: 20px;
+  padding-top: 26px;
+}
+
+.contact-description h1 {
+  font-weight: 400;
+  font-size: 20px;
+}
+.contact-description h1 span {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* 10-inch ipad  contact div css */
+@media only screen and (min-width: 700px) {
+  .contact-form-container {
+    margin: 0 60px;
+    margin-bottom: 40px;
+  }
+  .contact-form-container hr{
+    display: none;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 0 45px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    display: flex;
+  }
+  .contact-description h1 {
+    font-size: 24px;
+  }
+  .contact-description h1 span {
+    font-size: 32px;
+  }
+
+  .contact-description p {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  
+
+  .location {
+    position: absolute;
+    margin-top: 200px;
+  }
+
+  .phoneNumber {
+    margin-top: 20px;
+  } 
+}
+
+/* 12-inch ipad pro contact div css */
+@media only screen and (min-width: 950px) {
+  .contact-form-container {
+    margin: 0 80px;
+    margin-bottom: 40px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin: 0;
+    padding: 0 45px;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    display: flex;
+  }
+
+  .contact-form .contact-description {
+    width: 450px;
+    height: 192px;
+  }
+  .contact-description h1 {
+    font-size: 36px;
+  }
+  .contact-description h1 span {
+    font-size: 42px;
+  }
+
+  .contact-description p {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .location {
+    position: absolute;
+    margin-top: 200px;
+  }
+
+  .phoneNumber {
+    margin-top: 20px;
+  } 
+}
+
+
+/* 15-inch desktop contact div css */
+@media only screen and (min-width: 1300px) {
+  .contact-form-container {
+    margin: 0 160px;
+    padding-top: 80px;
+    height: 700px;
+  }
+
+  .contact-form {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0 95px;
+    padding-top: 50px;
+    background: url(../images/contact_bg.png) 0 0 no-repeat;
+    background-color: #63c264;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-form .contact-description {
+    width: 450px;
+    height: 192px;
+  }
+
+  .contact-description h1 {
+    font-size: 36px;
+    width: 450px;
+    height: 192px;
+  }
+  .contact-description h1 span {
+    font-size: 46px;
+  }
+
+  .contact-description p {
+    font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  .location {
+    position: absolute;
+    margin-top: 200px;
+  }
+
+  .phoneNumber {
+    margin-top: 50px;
+  }
+}
+
+/* Contact-form */
+.contact-form-layout {
+  padding-left: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.contact-form-layout input {
+  width: 295px;
+  height: 40px;
+  border-radius: 10px;
+  border-color: #59cf42;
+  border-width: 1px;
+  border-style: solid;
+  color: #7b7f93;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.message input {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.send-button {
+  width: 138px;
+  height: 40px;
+  border-style: solid;
+  border-color: #fff;
+  border-radius: 10px;
+  border-width: 1px;
+  position: absolute;
+  right: 35px;
+  display: flex;
+  justify-content: center;
+  padding-top: 6px;
+  cursor: pointer;
+}
+
+.send-button:hover{
+  background-color: #46ad54;
+}
+
+.send-button a{
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+hr {
+  height: 1px;
+  margin: 0px 20px;
+  margin-top: 60px;
+  color: #2c8035;
+  border-style: solid;
+}
+
+.location {
+  color: #fff;
+  padding: 20px 0;
+  padding-left: 20px;
+  font-weight: 500;
+}
+
+.location p {
+  line-height: 1.7;
+}
+
+.location .address {
+  margin-top: 10px;
+  width: 174px;
+  height: 48px;
+}
+
+.location .phoneNumber {
+  font-size: 16px;
+}
+
+/* 12-inch ipad pro  contact-form div css */
+@media only screen and (min-width: 950px) {
+  .contact-form-layout input {
+    width: 300px;
+    height: 50px;
+    font-size: 14px;
+  }
+
+  .message input {
+    padding-top: 30px;
+    padding-bottom: 90px;
+  }
+}
+
+
+/* 15-inch desktop contact-form div css */
+@media only screen and (min-width: 1550px) {
+  .contact-form-layout {
+    padding-left: 150px;
+  }
+
+  .contact-form-layout input {
+    width: 450px;
+    height: 50px;
+    font-size: 14px;
+    padding-left: 10px;
+  }
+
+  .message input {
+    padding-top: 30px;
+    padding-bottom: 110px;
+  }
+}
+
+/* footer */
+footer {
+  background-color: #191c26;
+  color: #ffffff;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-logo {
+  padding-left: 40px;
+  padding-top: 25%;
+}
+.footer-logo strong {
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.footer-logo h2 {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.footer-logo p {
+  font-size: 13px;
+  opacity: 80%;
+}
+footer li {
+  padding-right: 10px;
+}
+.footer-menu {
+  margin-top: 42px;
+  width: 400px;
+  display: flex;
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+footer a {
+  color: #ffffff;
+}
+.socials {
+  width: 295px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+  margin-top: 28px;
+}
+.socials a {
+  font-size: 36px;
+  color: #fff;
+}
+
+footer hr {
+  margin-top: 25px;
+  margin-bottom: 13px;
+  opacity: 10%;
+}
+.copyright {
+  font-size: 10.5px;
+  text-align: center;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+
+/* 10-inch ipad  footer css */
+@media only screen and (min-width: 700px) {
+
+  .footer-content{
+    display: flex;
+    padding-top: 15%;
+    font-size: 14px;
+    margin: 0 60px;
+    justify-content: space-between;
+  }
+  .footer-logo {
+    padding: 0;
+  }
+
+  .group9{
+    align-self: center;
+  }
+
+  .footer-menu {
+    width: auto;
+    display: flex;
+    padding: 0;
+    margin: auto;
+  }
+
+  .socials{
+    display: inline-block;
+    width: auto;
+    align-self: center;
+    margin: 0;
+  }
+  .socials a {
+    font-size: 26px;
+    padding-left: 10px;
+  }
+
+  footer hr{
+    margin: 0 60px;
+    margin-top: 25px;
+    margin-bottom: 13px;
+  }
+
+}
+
+/* 12-inch ipad pro footer css */
+@media only screen and (min-width: 950px) {
+  footer {
+    padding-top: 100px;
+  }
+
+  .footer-content {
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    padding: 0;
+    align-items: center;
+  }
+
+
+  .group9 {
+    padding-left: 0;
+    align-self: center;
+  }
+
+  footer a {
+    text-transform: uppercase;
+  }
+
+  .footer-menu {
+    margin-top: 0;
+    width: 400px;
+    padding: 0;
+    display: inline;
+  }
+
+  footer li {
+    display: inline;
+  }
+
+  .socials {
+    margin: 0;
+  }
+
+  .copyright {
+    font-size: 10.5px;
+    text-align: center;
+    bottom: 0;
+  }
+}
+/* 15-inch desktop footer div css */
+@media only screen and (min-width: 1550px) {
+  .footer-content {
+    padding: 0 160px;
+    padding-top: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    padding: 0;
+    align-items: center;
+  }
+
+  .group9 {
+    padding-left: 210px;
+  }
+
+  footer a {
+    text-transform: uppercase;
+  }
+
+  .footer-menu {
+    margin-top: 0;
+    width: 400px;
+    padding: 0;
+    display: inline;
+  }
+
+  footer li {
+    padding-right: 52px;
+    display: inline;
+  }
+
+  .socials {
+    margin: 0;
+    margin-left: 85px;
+  }
+}

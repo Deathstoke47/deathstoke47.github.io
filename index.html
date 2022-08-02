@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" 
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="js/script.js"></script>
+    <title>Nature Boy Fitness & Nutrition</title>
+  </head>
+  <body id="home">
+      <header id="header">
+        <div id="header-logo" class="header-logo">
+          <img src="images/logo.svg" alt="">
+        </div>
+        <nav>
+          <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+          <label for="nav-checkbox" class="menu-toggle" onclick="removeDiv()">
+            <svg class="menu" id="menu" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="equals" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M416 304H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32zm0-192H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+            <svg class="close" id="close" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+          </label>
+          <div class="menu-links" id="menu-links">
+            <ul class="menu">
+              <li><a class="current" href="#home">Home</a></li>
+              <li><a href="#aboutus">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contactus">Contact us</a></li>
+            </ul>
+            <div class="menu-image">
+              <img src="images/face_bg.svg" alt="">
+            </div>
+          </div>
+          <div class="login">
+            <a href="#" class="login-button">Login</a>
+          </div>
+        </nav>
+      </header>
+      <main id="main">
+        <div class="intro-container" id="intro-container">
+          <div class="intro-content">
+            <div class="intro-heading">
+              <h1>Welcome to <br /><span>Nature Boy Fitness !</span></h1>
+              <p>
+                The home of simple and easy to make calorie meal plans! Whether you’re
+                trying to lose weight, gain weight, build muscle, or just get on a
+                healthy calorie meal plan to live a better lifestyle, Nature Boy has
+                all that you need!
+              </p>
+              <br />
+              <div class="learn-more-button">
+                <a href="#" class="learn-more"><span class="learn-more_button">Learn more</span></a> 
+                <span class="button-icon"><ion-icon name="chevron-forward-circle-outline"></ion-icon></span>
+              </div>
+            </div>
+            <br />
+            <div class="intro-image">
+              <img class="food-plate"
+                src="images/food_plate.png"
+                alt="Plate filled with different food"
+              />
+              <img class= "leaves" src="images/leaves.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="description-content">
+          <p class="title" id="aboutus">The story of <br /><span>Nature Boy Fitness!</span></p>
+          <p>
+            Nature Boy Fitness was created back in 2015 and started the passion on
+            YouTube making fitness and nutrition videos, mainly calorie meal plans.
+            As the channel grew and more and more viewers loved the calorie meal
+            plan contents, Nature Boy became one of the best places to get calorie
+            meal ideas, calorie meal plans, diet plans, protein shake recipes and
+            overall, a platform that brings healthy eating and living to one’s life.
+          </p>
+          <p>
+            To get some ideas on calorie meal plans, check out the YouTube channel:
+            <a href="#" class="youtube-link">
+              https://www.youtube.com/natureboyfitness</a
+            >
+          </p>
+        </div>
+       <div class="youtube-videos">
+         <div class="section-1">
+          <iframe src="https://www.youtube.com/embed/pT-E_jTcsD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p class="title">How to eat 2000 Calories A Day to Gain Weight</p>
+          <p class="views">5.2K Views</p>
+         </div>
+         <div class="section-2">
+          <div class = "video-2">
+            <iframe src="https://www.youtube.com/embed/MJ9UGzlqxyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="title">How to eat 2000 Calories A Day to Lose Weight</p>
+            <p class="views">7.2K Views</p>
+          </div>
+          <div  class = "video-3">
+            <iframe src="https://www.youtube.com/embed/7v1BpX4Awxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="title">Get fit in 4 weeks and loose extra pounds</p>
+            <p class="views">2.4K Views</p>
+          </div>
+         </div>
+         <div class="scroll">
+          <p>Scroll to see more..</p>
+        </div>
+       </div>
+        <div class="form-container" id="services">
+          <img src="images/mint_02.png" alt="">
+          <div class="form-content">
+            <div class="form-description">
+              <h1>Get a custom calorie meal plan for your own needs</h1>
+            </div>
+            <div class="plan-form">
+            <form class="form-1" action="#">
+              <div class="gender">
+                <p>Gender</p>
+                <div class="male">
+                  <input type="radio" name="gender" value="Male" />
+                  <label for="Male">Male</label>
+                </div>
+                <div class="female">
+                  <input type="radio" name="gender" value="Female" />
+                  <label for="female">Female</label>
+                </div>
+              </div>
+              <div class="input-fields">
+                <div class="weight">
+                  <p>Weight</p>
+                  <input type="text" />
+                  <p><span>lbs</span></p>
+                </div>
+                <div class="weight-goal">
+                  <p>Goal Weight</p>
+                  <input type="text" />
+                  <p><span>lbs</span></p>
+                </div>
+                <div class="height">
+                  <p>Height</p>
+                  <div class="height-input">
+                    <input type="text" placeholder="ft" />
+                    <input type="text" placeholder="in"/>
+                  </div>
+                </div>
+                <div class="email">
+                  <p>Email</p>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="plan-button">
+                <a href="#">Start Plan Now</a>
+                <span class="button-icon"><ion-icon name="chevron-forward-circle-outline"></ion-icon></span>
+              </div>
+            </form>
+          </div>
+        </div>
+        </div>
+        <div class="tiktok">
+          <div class="tiktok-img">
+            <img class="leaves" src="images/leaves.png" alt="">
+            <img  class="food-plate" id="food-plate" src="images/food_plate.png" alt=""></div>
+          <div class="tiktok-description">
+            <p>Visit Nature Boy Fitness</p>
+            <img src="images/tiktok_logo.png" alt="">
+            <a href="#" class = "tiktok-link"><br>https://www.tiktok.com/@natureboyfitness</a>
+          </div>
+          <div class="tiktok-videos">
+            <div class="tiktok-1">
+              <iframe src="https://www.youtube.com/embed/pT-E_jTcsD8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <p class="title">What does Healthy Even Mean?</p>
+             </div>
+              <div class = "tiktok-2">
+                <iframe src="https://www.youtube.com/embed/MJ9UGzlqxyk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="title">Too busy for a mean plan?</p>
+              </div>
+              <div  class = "tiktok-3">
+                <iframe src="https://www.youtube.com/embed/7v1BpX4Awxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class="title">Trim down extra calories in 20 days</p>
+              </div>
+          </div>
+        </div>
+        <div class="contact-form-container" id="contactus">
+          <div class="contact-form">
+            <div class="contact-description">
+              <h1>Hey &#128075 <br><span> We want to hear from you.</span></h1>
+            </div>
+            <div class="contact-form-layout">
+              <form action="#">
+                <div class="name">
+                  <input type="text" placeholder="Full Name">
+                </div>
+                <div class="contact-email">
+                  <input type="text" placeholder="Email Address">
+                </div>
+                <div class="message">
+                  <input type="text" placeholder="Write your message here...">
+                </div>
+                <div class="send-button">
+                  <a href="#">Send</a>
+                  <span class="button-icon"><ion-icon name="chevron-forward-circle-outline"></ion-icon></span>
+                </div>
+              </form>
+            </div>
+            <hr>
+            <div class="location">
+              <p class="address">88 Islington Ave, Toronto <br>M9V 2X5, Canada</p>
+              <p class="phoneNumber"> 416-740-0872</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer id="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+           <h2><strong>Nature</strong> Boy</h2>
+           <p>Fitness & Nutrition</p>
+          </div>
+          <div class="group9">
+            <ul class="footer-menu">
+              <li><a class="current" href="#home">Home</a></li>
+              <li><a href="#aboutus">About us</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contactus">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <hr />
+        <div class="copyright">
+          <p class="copyright">Copyright &copy; 2021</p>
+        </div>
+      </footer>
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

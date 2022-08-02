@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="173px" height="46px" viewBox="0 0 173 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>mobile_logo</title>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#37DA4C" offset="0%"></stop>
+            <stop stop-color="#A7E839" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="02_mobile_view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01_Nature-Boy-Fitness_Mobile" transform="translate(-20.000000, -17.000000)">
+            <g id="mobile_logo" transform="translate(20.000000, 17.686047)">
+                <g id="Group-17" transform="translate(54.000000, 0.000000)">
+                    <text id="Nature" font-family="Montserrat-Bold, Montserrat" font-size="22" font-weight="bold" letter-spacing="-0.370000098" fill="#141627">
+                        <tspan x="7.10542736e-15" y="21">Nature</tspan>
+                    </text>
+                    <text id="Boy" font-family="Montserrat-Regular, Montserrat" font-size="22" font-weight="normal" letter-spacing="-0.370000098" fill="#141627">
+                        <tspan x="77.9337474" y="21">Boy</tspan>
+                    </text>
+                    <text id="Fitness-&amp;-Nutrition" font-family="Montserrat-Regular, Montserrat" font-size="13" font-weight="normal" letter-spacing="-0.218636421" fill="#656C89">
+                        <tspan x="1.86763171" y="39.5">Fitness &amp; Nutrition</tspan>
+                    </text>
+                </g>
+                <g id="logo" transform="translate(0.000000, 0.313953)">
+                    <circle id="Oval" stroke="#D0DAE4" cx="22.5" cy="22.5" r="22"></circle>
+                    <path d="M22.5,2.93478261 C33.3055712,2.93478261 42.0652174,11.6944288 42.0652174,22.5 C42.0652174,33.3055712 33.3055712,42.0652174 22.5,42.0652174 C11.6944288,42.0652174 2.93478261,33.3055712 2.93478261,22.5 C2.93478261,11.6944288 11.6944288,2.93478261 22.5,2.93478261 Z M32.0627668,28.4367024 C31.4515114,27.825447 30.4604705,27.825447 29.8492151,28.4367024 C25.5704272,32.7154903 18.6331414,32.7154903 14.3543535,28.4367024 C13.7430981,27.825447 12.7520572,27.825447 12.1408018,28.4367024 C11.5295464,29.0479578 11.5295464,30.0389987 12.1408018,30.6502541 C17.6421005,36.1515528 26.5614681,36.1515528 32.0627668,30.6502541 C32.6740222,30.0389987 32.6740222,29.0479578 32.0627668,28.4367024 Z M29.7149407,16.2391304 C27.9860493,16.2391304 26.5845059,17.6406738 26.5845059,19.3695652 C26.5845059,21.0984566 27.9860493,22.5 29.7149407,22.5 C31.4438321,22.5 32.8453755,21.0984566 32.8453755,19.3695652 C32.8453755,17.6406738 31.4438321,16.2391304 29.7149407,16.2391304 Z M20.7146612,18.4802117 C18.2390768,16.0046273 14.2253614,16.0046273 11.749777,18.4802117 C11.474712,18.7552767 11.474712,19.2012451 11.749777,19.47631 C12.0248419,19.7513749 12.4708103,19.7513749 12.7458752,19.47631 C14.6713298,17.5508554 17.7931084,17.5508554 19.7185629,19.47631 C19.9936279,19.7513749 20.4395963,19.7513749 20.7146612,19.47631 C20.9897261,19.2012451 20.9897261,18.7552767 20.7146612,18.4802117 Z" id="face" fill="url(#linearGradient-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
